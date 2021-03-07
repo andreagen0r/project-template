@@ -1,0 +1,19 @@
+#pragma once
+
+#include <string_view>
+// This is a template to generate project information
+
+// clang-format off
+namespace foo::info {
+    std::string_view gitBranch { "@GIT_BRANCH@" };
+    std::string_view gitCommit { "@GIT_COMMIT_HASH@" };
+    std::string_view gitTag { "@GIT_TAG@" };
+    std::string_view gitAuthors { @GIT_AUTHORS@ };
+    std::string_view projectName { "@PROJECT_NAME@" };
+    std::string_view projectVersion { "@PROJECT_VERSION@" };
+    std::string_view projectInfo { "@PROJECT_NAME@ @PROJECT_VERSION@ "
+                                        "Branch: [@GIT_BRANCH@] "
+                                        "Commit: [@GIT_COMMIT_HASH@] "
+                                        "Tag: [@GIT_TAG@]" };
+
+}

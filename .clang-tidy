@@ -1,0 +1,5 @@
+---
+Checks:          '*,-abseil-*,-altera-*,-android-*,-boost-*,-cert-*,-darwin-*,-fuchsia-*,-google-*,-hicpp-*,-linuxkernel-*,-llvm-*,-llvmlibc-*,-mpi-*,-objc-*,-zircon-*,-modernize-use-trailing-return-type, -cppcoreguidelines-pro-type-const-cast'
+WarningsAsErrors: '-*'
+HeaderFilterRegex: ''
+FormatStyle:     none
